@@ -7,11 +7,11 @@ pipeline {
             steps {
                 script {
                     sh "cd /c/Users/aiordan/Desktop/AC\n " +
-                            "mvn clean compile install\n"
+                            "/c/Maven/bin/mvn.cmd clean compile install\n"
                 }
             }
         }
-        stage("Build") {
+        stage("Build image") {
             steps {
                 script {
                     sh "cd /c/Users/aiordan/Desktop/AC\n " +
@@ -20,7 +20,7 @@ pipeline {
                 }
             }
         }
-        stage("Push") {
+        stage("Push image") {
             steps {
                 script {
                     sh "cd /c/Users/aiordan/Desktop/AC\n " +
