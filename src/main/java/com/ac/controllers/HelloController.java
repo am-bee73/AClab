@@ -12,6 +12,6 @@ public class HelloController {
     @RequestMapping(method = RequestMethod.GET, path = "/hello")
     public String sayHello() throws UnknownHostException {
         String ip = InetAddress.getLocalHost().getHostAddress();
-        return "Hello pucino! We are on: " + ip;
+        return "Hello voila! We are on: " + ip;
     }
 }
